@@ -1,4 +1,4 @@
-# Total Factor Productivyt Toolbox for MATLAB
+# Total Factor Productivity Toolbox for MATLAB
 
 Version 1.0
 
@@ -10,7 +10,7 @@ Bert M. Balk
 
 Javier Barbero
 
-José L. Zofío.
+José L. Zofío
 
 ## Usage
 
