@@ -18,6 +18,7 @@ To use the Toolbox add the folder called "tfptoolbox" to the MATLAB path.
 
 The toolbox contains the following folders:
 - tfptoolbox: all the functions of the toolbox all here. This is the folder you must add to the MATLAB path.
+- examplesUSDA: examples using USDA agriculture data.
 - examplesWP_ERS-2018-004-LIS: examples of all the functions included in the toolbox. Replication of [Erasmus Research Institute of Management (ERIM) Working Paper ERS-2018-004-LIS](https://ideas.repec.org/p/ems/eureri/104722.html)
 
 ## How to cite
