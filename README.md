@@ -1,4 +1,4 @@
-# Total Factor Productivity Toolbox for MATLAB
+﻿# Total Factor Productivity Toolbox for MATLAB
 
 Version 1.0
 
@@ -18,12 +18,14 @@ To use the Toolbox add the folder called "tfptoolbox" to the MATLAB path.
 
 The toolbox contains the following folders:
 - tfptoolbox: all the functions of the toolbox all here. This is the folder you must add to the MATLAB path.
-- examples: examples of all the functions included in the toolbox.
+- examplesWP_ERS-2018-004-LIS: examples of all the functions included in the toolbox. Replication of Erasmus Research Institute of Management (ERIM) Working Paper ERS-2018-004-LIS [I'm an inline-style link](https://ideas.repec.org/p/ems/eureri/104722.html)
 
 ## How to cite
-See instructions at:
+Plase, cite the toolbox as:
 
-http://www.tfptoolbox.com/how-to-cite/
+Balk, B.M. & Barbero, J. & Zofío, J.L., (2018). **A Total Factor Productivity Toolbox for MATLAB**, ERIM Report Series Research in Management ERS-2018-004-LIS, Erasmus Research Institute of Management (ERIM), Erasmus University Rotterdam, The Netherlands.
+
+Balk, B.M. & Zofío, J.L., (2018). **The Many Decompositions of Total Factor Productivity Change**, ERIM Report Series Research in Management ERS-2018-003-LIS, Erasmus Research Institute of Management (ERIM), Erasmus University Rotterdam, The Netherlands.
 
 ## License
 Code is distributed under the GNU-GPL3
