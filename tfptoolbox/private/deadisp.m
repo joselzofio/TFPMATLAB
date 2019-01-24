@@ -175,6 +175,7 @@ function [  ] = deadisp( out, dispstr )
             
             % Get data
             dat = eval(sprintf('out.%s', paramstr));
+            datForSummary = dat;
             if ~iscell(dat)
                 % Convert to cell if not cell
                 dat = num2cell(dat);                
@@ -185,10 +186,28 @@ function [  ] = deadisp( out, dispstr )
                 
             % For each column in the data
             for j=1:ncols
-                                
+            
                 % Get Body
                 bodyj = cellfun(@(x) sprintf(format, x), dat(:, j),'Unif',false);
-
+                
+                % ADD Summary Statistics
+                if strcmp(name, 'DMU')
+                    bodyj = [bodyj; {''; 'Mean'; 'Std'; 'Max'; 'Min'}];
+                else
+                    meandat = mean(datForSummary(~isnan(datForSummary(:, j)), j));
+                    stddat  = std(datForSummary(~isnan(datForSummary(:, j)), j));
+                    maxdat  = max(datForSummary(~isnan(datForSummary(:, j)), j));
+                    mindat  = min(datForSummary(~isnan(datForSummary(:, j)), j));
+                    bodyj = [bodyj; {'';
+                        sprintf(format, meandat);
+                        sprintf(format, stddat);
+                        sprintf(format, maxdat);
+                        sprintf(format, mindat)}];
+                end
+                %meanj = dat(:, j);
+                %bodyj = {[bodyj; {num2str(meanj)}]};
+                % END ADD Summary Statistics
+                
                 % Header
                 if ncols > 1
                     % If more than 1 columns add number to name
@@ -197,7 +216,7 @@ function [  ] = deadisp( out, dispstr )
                     namej = name;
                 end
                 
-                headerj = cellstr(namej);
+                headerj = cellstr(namej);             
 
                 % All all together
                 allThis_c = [headerj; ' '; bodyj];
@@ -219,9 +238,16 @@ function [  ] = deadisp( out, dispstr )
             end
             
             % Replace second row with separator
-            tabAll(2, :) = '-';            
+            tabAll(2, :) = '-';     
+            
+            % Replace empty row before Summary statistics with separator
+            tabAll(end - 4, :) = '-';     
+            
+            
             
     end
+    
+    
     
     disp(repelem('-', size(tabAll, 2))); % Upper Line
     disp(tabAll); % Table
