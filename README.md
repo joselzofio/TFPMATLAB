@@ -28,6 +28,8 @@ Balk, B.M. & Barbero, J. & Zofío, J.L., (2018). **A Total Factor Productivity T
 
 Balk, B.M. & Zofío, J.L., (2018). **The Many Decompositions of Total Factor Productivity Change**, ERIM Report Series Research in Management ERS-2018-003-LIS, Erasmus Research Institute of Management (ERIM), Erasmus University Rotterdam, The Netherlands.
 
+[![DOI](https://zenodo.org/badge/132484257.svg)](https://zenodo.org/badge/latestdoi/132484257)
+
 ## License
 Code is distributed under the GNU-GPL3
 
