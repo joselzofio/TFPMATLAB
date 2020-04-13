@@ -24,7 +24,7 @@ The toolbox contains the following folders:
 ## How to cite
 Plase, cite the toolbox as:
 
-Balk, B.M. & Barbero, J. & Zofío, J.L., (2018). **A Total Factor Productivity Toolbox for MATLAB**, ERIM Report Series Research in Management ERS-2018-004-LIS, Erasmus Research Institute of Management (ERIM), Erasmus University Rotterdam, The Netherlands.
+Balk, B.M. & Barbero, J. & Zofío, J.L. (2020). **A toolbox for calculating and decomposing Total Factor Productivity indices**, *Computers & Operations Research*, Volume 115 (104853), 1-23. https://doi.org/10.1016/j.cor.2019.104853
 
 Balk, B.M. & Zofío, J.L., (2018). **The Many Decompositions of Total Factor Productivity Change**, ERIM Report Series Research in Management ERS-2018-003-LIS, Erasmus Research Institute of Management (ERIM), Erasmus University Rotterdam, The Netherlands.
 
